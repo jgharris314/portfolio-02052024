@@ -1,18 +1,13 @@
 "use client"
 import SectionContainer from "./components/SectionContainer"
 import Nav from "./components/Nav"
+import Home from "./components/sections/Home"
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="bg-black min-h-screen w-full">
+    <div className="bg-mothBlack-0 min-h-screen w-full">
       <Nav />
-      <SectionContainer
-        bgClasses="h-screen bg-green-500 pt-12"
-        id="home"
-        additionalContentClasses="flex justify-center items-center h-full w-full text-center text-[72px] leading-[72px] md:text-[96px]"
-      >
-        Jacob Harris
-      </SectionContainer>
+      <Home />
       <SectionContainer
         bgClasses="h-screen bg-red-500 pt-12"
         additionalContentClasses="w-full text-center text-[72px]"
