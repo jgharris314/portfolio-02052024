@@ -12,12 +12,10 @@ import { navOptions } from "./constants"
 export default function MobileNav() {
   const router = useRouter()
   const [isOpen, setIsOpen] = useState(false)
-  const [currentHash, setCurrentHash] = useState("landing")
 
   function onClickHandler(option: string) {
     const hash = `#${option}`
     router.push(hash)
-    setCurrentHash(option)
     setIsOpen(false)
   }
 
