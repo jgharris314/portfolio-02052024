@@ -1,5 +1,6 @@
 import SectionContainer from "../SectionContainer"
 import { FaGithub, FaLinkedin } from "react-icons/fa"
+import { BsFiletypePdf } from "react-icons/bs"
 
 export default function Home() {
   const labelClasses = "bg-mothGrey-0/15 p-1 md:p-4 text-mothBlack-0 font-black"
@@ -32,6 +33,20 @@ export default function Home() {
             size={60}
             className="hover:fill-[#0077B5]"
           />
+        </a>
+        <a
+          href={"/docs/resume.pdf"}
+          download="resume.pdf"
+          className="group relative"
+        >
+          <BsFiletypePdf
+            color="#dddae025"
+            size={60}
+            className="hover:fill-mothGreen-0"
+          />
+          <span className="absolute top-[4.5rem] -left-3 scale-0 rounded bg-mothBlack-0 p-2 text-xs text-white group-hover:scale-100">
+            Download My Resume!
+          </span>
         </a>
       </div>
     </SectionContainer>
