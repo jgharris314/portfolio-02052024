@@ -25,7 +25,7 @@ export default function MobileNav() {
   return (
     <>
       <SectionContainer
-        bgClasses="lg:hidden bg-black fixed h-16 w-screen left-0 top-0"
+        bgClasses="lg:hidden bg-mothPurple-0  bg-gradient-to-b from-black/90 to-black/70 fixed h-16 w-screen left-0 top-0"
         additionalContentClasses="flex w-full h-16 items-center"
       >
         <div className="w-1/3">
@@ -37,14 +37,14 @@ export default function MobileNav() {
             {isOpen ? (
               <MdClose size={35} color={greenHex} />
             ) : (
-              <RxHamburgerMenu size={35} color={purpleHex} />
+              <RxHamburgerMenu size={35} color={greenHex} />
             )}
           </button>
         </div>
         <div className="relative flex w-1/3 justify-center bg-contain">
           <Image
             alt="jgharris314 logo"
-            className="bg-black h-16 w-40"
+            className=" bg-mothPurple-0  bg-gradient-to-b from-black/90 to-black/70 h-16 w-40"
             src={logo}
             width={0}
             height={0}
@@ -55,10 +55,9 @@ export default function MobileNav() {
       </SectionContainer>
 
       {isOpen && (
-        <div className="h-screen fixed top-16 left-0 w-screen bg-black lg:hidden transition-transform">
-          {" "}
+        <div className="h-screen fixed top-16 left-0 w-screen bg-mothBlack-0 lg:hidden transition-transform">
           {
-            <ul className="flex flex-col w-full items-start justify-start gap-4 text-white p-6 md:px-12">
+            <ul className="flex flex-col w-full items-start justify-start gap-4 text-mothGrey-0 p-6 md:px-12">
               {navOptions.map((option) => {
                 return (
                   <button
@@ -66,7 +65,7 @@ export default function MobileNav() {
                     type="button"
                     onClick={() => onClickHandler(option)}
                     className={
-                      "capitalize w-full h-20 text-[20px] font-semibold bg-black/5 border-white border-b-2"
+                      "capitalize w-full h-20 text-[20px] font-semibold border-mothGrey-0 border-b-2"
                     }
                   >
                     {option}
