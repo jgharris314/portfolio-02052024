@@ -6,6 +6,7 @@ import { MdClose } from "react-icons/md"
 import SectionContainer from "../SectionContainer"
 import Image from "next/image"
 import { useRouter } from "next/navigation"
+import { Transition } from "@headlessui/react"
 import logo from "../../assets/logo.png"
 import { navOptions } from "./constants"
 
@@ -19,13 +20,13 @@ export default function MobileNav() {
     setIsOpen(false)
   }
 
-  const purpleHex = "#7338ab"
+  const orangeHex = "#f2a508"
   const greenHex = "#2cfc04"
 
   return (
     <>
       <SectionContainer
-        bgClasses="lg:hidden bg-mothPurple-0  bg-gradient-to-b from-black/90 to-black/70 fixed h-16 w-screen left-0 top-0"
+        bgClasses="lg:hidden bg-mothPurple-0  bg-gradient-to-b from-black/90 to-black/70 fixed h-16 w-screen left-0 top-0 z-50"
         additionalContentClasses="flex w-full h-16 items-center"
       >
         <div className="w-1/3">
@@ -35,7 +36,7 @@ export default function MobileNav() {
             className="h-12 flex items-center"
           >
             {isOpen ? (
-              <MdClose size={35} color={greenHex} />
+              <MdClose size={35} color={orangeHex} />
             ) : (
               <RxHamburgerMenu size={35} color={greenHex} />
             )}
@@ -44,7 +45,7 @@ export default function MobileNav() {
         <div className="relative flex w-1/3 justify-center bg-contain">
           <Image
             alt="jgharris314 logo"
-            className=" bg-mothPurple-0  bg-gradient-to-b from-black/90 to-black/70 h-16 w-40"
+            className=" bg-mothPurple-0  bg-gradient-to-b from-black/90 to-black/70 h-16 w-40 z-50"
             src={logo}
             width={0}
             height={0}
@@ -55,7 +56,7 @@ export default function MobileNav() {
       </SectionContainer>
 
       {isOpen && (
-        <div className="h-screen fixed top-16 left-0 w-screen bg-mothBlack-0 lg:hidden transition-transform">
+        <div className="h-screen fixed top-16 left-0 w-screen bg-mothBlack-0 lg:hidden transition-transform z-50">
           {
             <ul className="flex flex-col w-full items-start justify-start gap-4 text-mothGrey-0 p-6 md:px-12">
               {navOptions.map((option) => {

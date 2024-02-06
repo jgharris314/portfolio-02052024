@@ -2,12 +2,11 @@ import Image from "next/image"
 import { v4 as uuidv4 } from "uuid"
 import logo from "../../assets/logo.png"
 import SectionContainer from "../SectionContainer"
-
 import { navOptions } from "./constants"
 
 export default function DesktopNav() {
   return (
-    <SectionContainer bgClasses="hidden lg:block bg-mothPurple-0  bg-gradient-to-t from-black/90 to-black/50 fixed h-16 w-screen left-0 top-0">
+    <SectionContainer bgClasses="hidden lg:block bg-mothPurple-0  bg-gradient-to-t from-black/90 to-black/50 fixed h-16 w-screen left-0 top-0 z-50">
       <div className="relative flex w-full justify-between h-16 items-center">
         <div className="w-full">
           {" "}
