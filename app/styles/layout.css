@@ -41,5 +41,5 @@
 }
 
 .label-classes {
-  @apply bg-mothGrey-0/5 p-1 md:p-4 text-mothBlack-0 font-black drop-shadow-[0_1.2px_1.2px_rgba(255,255,255,0.8)];
+  @apply bg-mothGrey-0/10 p-1 md:p-4 text-mothBlack-0 font-black drop-shadow-[0_1.2px_1.2px_rgba(255,255,255,0.8)];
 }

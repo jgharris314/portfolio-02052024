@@ -4,7 +4,6 @@ import { SiTypescript } from "react-icons/si"
 import SectionContainer from "../../components/SectionContainer"
 
 const aboutMeItems = [
-  "a developer",
   "a creator",
   "a musician",
   "a student",
@@ -34,8 +33,8 @@ export default function AboutSection() {
       additionalContentClasses="flex flex-col items-center justify-center w-full h-full"
       id="about"
     >
-      <div className="text-[24px] md:text-[36px] mb-4 text-mothGrey-0 font-semibold">
-        I could be described as:
+      <div className="text-[22px] md:text-[36px] mb-4 text-mothGrey-0 font-semibold">
+        I have been described as:
       </div>
       <div className="text-[36px] md:text-[72px] text-mothGrey-0 label-classes w-[280px] md:w-[700px] text-center uppercase">
         {aboutMeItems[currentItem]}
