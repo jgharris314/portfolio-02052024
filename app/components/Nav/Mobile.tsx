@@ -20,7 +20,7 @@ export default function MobileNav() {
   }
 
   const orangeHex = "#f2a508"
-  const greenHex = "#2cfc04"
+  const greenHex = "#2cfc0490"
 
   return (
     <>

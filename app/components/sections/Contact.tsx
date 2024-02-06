@@ -3,7 +3,7 @@ import SectionContainer from "../SectionContainer"
 export default function ContactSection() {
   return (
     <SectionContainer
-      bgClasses="h-screen  bg-gradient-to-b from-mothGrey-0/50 from-0% to-mothBlack-0 to-80% pt-12"
+      bgClasses="h-screen  bg-gradient-to-b from-mothGreen-0/20 from-0% to-mothBlack-0 to-80% pt-12"
       additionalContentClasses="w-full text-center text-[72px]"
       id="contact"
     >

@@ -11,31 +11,12 @@ import {
   carouselItems,
 } from "./constants"
 
-export default function ProjectsSection() {
-  const ButtonGroup = ({ next, previous, goToSlide, ...rest }: any) => {
-    return (
-      <div className="flex w-full gap-4 justify-center">
-        <button
-          className="bg-mothOrange-0 w-32 h-16 text-[18px] bg-gradient-to-bl from-mothBlack-0/80 to-mothBlack-0/0 rounded"
-          type="button"
-          onClick={() => previous()}
-        >
-          Prev Project
-        </button>
-        <button
-          type="button"
-          className="bg-mothGreen-0 w-32 h-16 text-[18px] bg-gradient-to-tr from-mothBlack-0/80 to-mothBlack-0/0 rounded"
-          onClick={() => next()}
-        >
-          Next Project
-        </button>
-      </div>
-    )
-  }
+import ButtonGroup from "./ButtonGroup"
 
+export default function ProjectsSection() {
   return (
     <SectionContainer
-      bgClasses="h-screen bg-mothBlack-0 bg-gradient-to-b from-mothBlack-0 via-mothBlack-0 to-mothGrey-0/50 via-80% pt-20"
+      bgClasses="h-screen bg-mothBlack-0 bg-gradient-to-b from-mothBlack-0 via-mothBlack-0 to-mothGreen-0/20 via-80% pt-20"
       additionalContentClasses="w-full text-center"
       id="projects"
     >

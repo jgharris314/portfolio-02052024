@@ -5,7 +5,7 @@ import { BsFiletypePdf } from "react-icons/bs"
 export default function HomeSection() {
   return (
     <SectionContainer
-      bgClasses={`h-screen bg-mothBlack-0 bg-gradient-to-b from-mothBlack-0 via-mothBlack-0 to-mothGreen-0/50 via-80% pt-12`}
+      bgClasses={`h-screen bg-mothBlack-0 bg-gradient-to-b from-mothBlack-0 via-mothBlack-0 to-mothGreen-0/20 via-80% pt-12`}
       id="home"
       additionalContentClasses="flex flex-col gap-8 justify-center items-center h-full w-full text-center  leading-[54px] md:leading-[72px]"
     >

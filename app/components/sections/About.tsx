@@ -29,7 +29,7 @@ export default function AboutSection() {
 
   return (
     <SectionContainer
-      bgClasses="h-screen bg-gradient-to-b from-mothGreen-0/50 from-0% to-mothBlack-0 to-80% relative"
+      bgClasses="h-screen bg-gradient-to-b from-mothGreen-0/20 from-0% to-mothBlack-0 to-80% relative"
       additionalContentClasses="flex flex-col items-center justify-center w-full h-full"
       id="about"
     >
