@@ -2,7 +2,7 @@ import SectionContainer from "../SectionContainer"
 import { FaGithub, FaLinkedin } from "react-icons/fa"
 import { BsFiletypePdf } from "react-icons/bs"
 
-export default function Home() {
+export default function HomeSection() {
   return (
     <SectionContainer
       bgClasses={`h-screen bg-mothBlack-0 bg-gradient-to-b from-mothBlack-0 via-mothBlack-0 to-mothGreen-0/50 via-80% pt-12`}
