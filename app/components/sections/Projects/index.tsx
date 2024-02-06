@@ -66,7 +66,7 @@ export default function ProjectsSection() {
                       alt={item.imgAlt}
                       width={900}
                       height={900}
-                      className="w-3/5 md:w-1/3 h-auto mx-auto"
+                      className="w-3/5 md:w-1/3 lg:w-1/5 h-auto mx-auto"
                     />
                   )
                 })}

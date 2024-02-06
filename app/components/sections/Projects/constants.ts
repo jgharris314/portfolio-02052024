@@ -46,7 +46,7 @@ export const carouselItems = [
     imgAlt: "screenshot of mothDama",
     title: "Project: mothDama",
     description:
-      "A simple app made for the kendama community. Made with the PERN stack",
+      "An app made for the kendama community. Made with the PERN stack",
     demoLink: "https://mothdama.vercel.app/games",
     githubLink: "https://github.com/jgharris314/mothDama",
   },
@@ -54,7 +54,7 @@ export const carouselItems = [
     imgSrcs: ["/projectImages/craps0.png", "/projectImages/craps1.png"],
     imgAlt: "screenshot of a craps simulator",
     title: "Project: Craps Simulator",
-    description: "a simple craps simulator made with React",
+    description: "A simulator for the casino game Craps! Made with React",
     demoLink: "https://craps2021.vercel.app",
     githubLink: "https://github.com/jgharris314/craps2021",
   },
