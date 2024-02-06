@@ -2,19 +2,15 @@
 import SectionContainer from "./components/SectionContainer"
 import Nav from "./components/Nav"
 import Home from "./components/sections/Home"
+import { useEffect, useState, useCallback } from "react"
+import AboutSection from "./components/sections/About"
 
 export default function HomePage() {
   return (
     <div className="bg-mothBlack-0 min-h-screen w-full">
       <Nav />
       <Home />
-      <SectionContainer
-        bgClasses="h-screen bg-red-500 pt-12"
-        additionalContentClasses="w-full text-center text-[72px]"
-        id="about"
-      >
-        About
-      </SectionContainer>
+      <AboutSection />
       <SectionContainer
         bgClasses="h-screen bg-blue-500 pt-12"
         additionalContentClasses="w-full text-center text-[72px]"

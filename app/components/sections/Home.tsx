@@ -3,28 +3,19 @@ import { FaGithub, FaLinkedin } from "react-icons/fa"
 import { BsFiletypePdf } from "react-icons/bs"
 
 export default function Home() {
-  const labelClasses =
-    "bg-mothGrey-0/5 p-1 md:p-4 text-mothBlack-0 font-black drop-shadow-[0_1.2px_1.2px_rgba(255,255,255,0.8)]"
-
   return (
     <SectionContainer
-      bgClasses={`h-screen bg-mothBlack-0 pt-12`}
+      bgClasses={`h-screen bg-mothBlack-0 bg-gradient-to-b from-mothBlack-0 via-mothBlack-0 to-mothGreen-0/50 via-80% pt-12`}
       id="home"
       additionalContentClasses="flex flex-col gap-8 justify-center items-center h-full w-full text-center  leading-[54px] md:leading-[72px]"
     >
-      <h1
-        className={`${labelClasses} text-[54px] md:text-[72px] lg:text-[96px]`}
-      >
+      <h1 className={`label-classes text-[54px] md:text-[72px] lg:text-[96px]`}>
         Jacob Harris
       </h1>
-      <h2
-        className={`${labelClasses} text-[40px] md:text-[54px] lg:text-[72px]`}
-      >
+      <h2 className={`label-classes text-[40px] md:text-[54px] lg:text-[72px]`}>
         Full Stack Developer
       </h2>
-      <h3
-        className={`${labelClasses} text-[36px] md:text-[40px] lg:text-[54px]`}
-      >
+      <h3 className={`label-classes text-[36px] md:text-[40px] lg:text-[54px]`}>
         Denver, CO
       </h3>
       <div className="flex w-full justify-center items-center gap-8">
