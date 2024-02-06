@@ -1,8 +1,6 @@
 "use client"
-import SectionContainer from "./components/SectionContainer"
 import Nav from "./components/Nav"
 import HomeSection from "./components/sections/Home"
-import { useEffect, useState, useCallback } from "react"
 import AboutSection from "./components/sections/About"
 import ProjectsSection from "./components/sections/Projects"
 import ContactSection from "./components/sections/Contact"

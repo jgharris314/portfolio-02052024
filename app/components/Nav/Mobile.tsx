@@ -6,7 +6,6 @@ import { MdClose } from "react-icons/md"
 import SectionContainer from "../SectionContainer"
 import Image from "next/image"
 import { useRouter } from "next/navigation"
-import { Transition } from "@headlessui/react"
 import logo from "../../assets/logo.png"
 import { navOptions } from "./constants"
 
