@@ -21,11 +21,12 @@ export default function ContactSection() {
 
   const parentClasses = "text-black flex flex-col"
   const inputClasses = "h-12 rounded"
-  const labelClasses = "text-mothGrey-0"
+  const labelClasses =
+    "text-mothGrey-0 bg-mothBlack-0 max-w-min whitespace-nowrap p-1"
 
   return (
     <SectionContainer
-      bgClasses="h-screen bg-gradient-to-b from-mothGreen-0/20 from-0% to-mothBlack-0 to-80% pt-20"
+      bgClasses="h-screen bg-[linear-gradient(to_bottom,#13051f,#2cfc0430_60%,#13051f30_75%,#13051f_95%),url('/bgImages/rect.jpeg')] bg-cover pt-20"
       additionalContentClasses="w-full text-center max-w-[800px]"
       id="contact"
     >
@@ -80,7 +81,7 @@ export default function ContactSection() {
             rows="5"
             parentClasses="col-span-2 rounded flex flex-col"
             inputClasses="w-full text-black rounded"
-            labelClasses=" text-lensGrey-0"
+            labelClasses={labelClasses}
             label="What would you like to collaborate on?"
             validation={{ required: "Message is required" }}
           />

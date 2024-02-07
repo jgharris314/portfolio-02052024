@@ -6,7 +6,7 @@ export default function HomeSection() {
   const iconColor = "#13051f"
   return (
     <SectionContainer
-      bgClasses={`h-screen bg-[linear-gradient(to_bottom,#13051f,#13051f80_80%,#2cfc0460),url('/bgImages/pexels-david-buchi-1070345.jpg')] pt-12`}
+      bgClasses={`h-screen bg-[linear-gradient(to_bottom,#13051f,#2cfc0430_60%,#13051f30_75%,#13051f_95%),url('/bgImages/pexels-david-buchi-1070345.jpg')] bg-cover pt-12`}
       id="home"
       additionalContentClasses="flex flex-col gap-8 justify-center items-center h-full w-full text-center  leading-[54px] md:leading-[72px]"
     >

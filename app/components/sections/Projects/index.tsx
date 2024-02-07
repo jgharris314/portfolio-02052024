@@ -16,7 +16,7 @@ import ButtonGroup from "./ButtonGroup"
 export default function ProjectsSection() {
   return (
     <SectionContainer
-      bgClasses="h-screen bg-mothBlack-0 bg-gradient-to-b from-mothBlack-0 via-mothBlack-0 to-mothGreen-0/20 via-80% pt-20"
+      bgClasses="h-screen bg-[linear-gradient(to_bottom,#13051f,#2cfc0430_60%,#13051f30_75%,#13051f_95%),url('/bgImages/lines.jpeg')] bg-cover pt-20"
       additionalContentClasses="w-full text-center"
       id="projects"
     >
@@ -33,9 +33,9 @@ export default function ProjectsSection() {
           return (
             <div
               key={uuidv4()}
-              className="relative flex flex-col w-full gap-8 xl:gap-4 text-mothGrey-0"
+              className="relative flex flex-col w-full gap-2 text-mothGrey-0"
             >
-              <span className="text-[36px] md:text-[54px] leading-[36px] md:leading-[54px]">
+              <span className="text-[36px] md:text-[48px] leading-[36px] md:leading-[48px] font-bold p-2 !bg-mothBlack-0 !text-mothGrey-0 whitespace-nowrap max-w-min mx-auto">
                 {item.title}
               </span>
               <Carousel responsive={innerCarouselResponsiveness} infinite>
@@ -52,8 +52,10 @@ export default function ProjectsSection() {
                   )
                 })}
               </Carousel>
-              <span className="text-[18px] xl:mb-4">{item.description}</span>
-              <div className="flex w-full justify-center gap-4 mb-4">
+              <span className="text-[18px] bg-mothBlack-0 mx-auto md:max-w-[600px] p-2">
+                {item.description}
+              </span>
+              <div className="flex max-w-min mx-auto justify-center gap-4 mb-4 bg-mothBlack-0 p-2">
                 <a href={item.demoLink} target="_blank">
                   {<CgPlayButtonO size={60} color={"#2cfc04"} />}
                 </a>

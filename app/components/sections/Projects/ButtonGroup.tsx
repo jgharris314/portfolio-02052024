@@ -3,20 +3,24 @@ export default function ButtonGroup({ next, previous }: any) {
     " shadow-sm shadow-mothGrey-0 p-4 text-[18px] rounded border-2 border-mothBlack-0 text-mothGrey-0 font-bold"
   return (
     <div className="flex w-full gap-4 justify-center">
-      <button
-        className={`${classes} bg-mothOrange-0/90`}
-        type="button"
-        onClick={() => previous()}
-      >
-        Prev Project
-      </button>
-      <button
-        type="button"
-        className={`${classes} bg-mothGreen-0/80 `}
-        onClick={() => next()}
-      >
-        Next Project
-      </button>
+      <div className="bg-mothBlack-0">
+        <button
+          className={`${classes} bg-mothOrange-0/90`}
+          type="button"
+          onClick={() => previous()}
+        >
+          Prev Project
+        </button>
+      </div>
+      <div className="bg-mothBlack-0">
+        <button
+          type="button"
+          className={`${classes} bg-mothGreen-0/80 `}
+          onClick={() => next()}
+        >
+          Next Project
+        </button>
+      </div>
     </div>
   )
 }

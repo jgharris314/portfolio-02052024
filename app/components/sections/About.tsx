@@ -21,7 +21,7 @@ export default function AboutSection() {
   }, [])
 
   useEffect(() => {
-    const intervalID = setInterval(shuffle, 2000)
+    const intervalID = setInterval(shuffle, 1000)
     return () => clearInterval(intervalID)
   }, [shuffle])
 
@@ -29,14 +29,14 @@ export default function AboutSection() {
 
   return (
     <SectionContainer
-      bgClasses="h-screen bg-gradient-to-b from-mothGreen-0/30 from-0% to-mothBlack-0 to-80% relative"
+      bgClasses="h-screen bg-[linear-gradient(to_bottom,#13051f,#2cfc0430_60%,#13051f30_75%,#13051f_95%),url('/bgImages/honeycomb.webp')] bg-cover relative"
       additionalContentClasses="flex flex-col items-center justify-center w-full h-full"
       id="about"
     >
       <div className="text-[22px] md:text-[36px] mb-4 text-mothGrey-0 font-semibold">
         I have been described as:
       </div>
-      <div className="text-[36px] md:text-[72px] text-mothGrey-0 label-classes w-[280px] md:w-[700px] text-center uppercase">
+      <div className="text-[36px] md:text-[72px] label-classes w-[280px] md:w-[700px] text-center uppercase">
         {aboutMeItems[currentItem]}
       </div>
       <div className="absolute bottom-0 left-0 grid grid-cols-2 md:flex gap-4 items-center justify-center justify-items-center w-full h-40 pb-4">
