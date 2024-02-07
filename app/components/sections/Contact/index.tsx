@@ -86,9 +86,11 @@ export default function ContactSection() {
             validation={{ required: "Message is required" }}
           />
           <div className="col-span-2 flex justify-center">
-            <button className="bg-mothGreen-0/80 shadow-sm shadow-mothGrey-0 p-4 text-[18px] rounded border-2 border-mothBlack-0 text-mothGrey- font-bold">
-              Submit
-            </button>
+            <div className="bg-mothBlack-0">
+              <button className="bg-mothGreen-0/80 shadow-sm shadow-mothGrey-0 p-4 text-[18px] rounded border-2 border-mothBlack-0 text-mothGrey- font-bold">
+                Submit
+              </button>
+            </div>
           </div>
         </form>
       </FormProvider>

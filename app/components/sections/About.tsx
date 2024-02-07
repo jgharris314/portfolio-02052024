@@ -39,7 +39,7 @@ export default function AboutSection() {
       <div className="text-[36px] md:text-[72px] label-classes w-[280px] md:w-[700px] text-center uppercase">
         {aboutMeItems[currentItem]}
       </div>
-      <div className="absolute bottom-0 left-0 grid grid-cols-2 md:flex gap-4 items-center justify-center justify-items-center w-full h-40 pb-4">
+      <div className="absolute bottom-5 md:bottom-0 left-0 grid grid-cols-2 md:flex gap-4 items-center justify-center justify-items-center w-full h-40 pb-4">
         <FaReact className={`${iconSize}`} fill="cyan" />
         <div className="flex bg-white rounded md:mr-3">
           <SiTypescript fill="#007acc" className={`${iconSize}`} />
