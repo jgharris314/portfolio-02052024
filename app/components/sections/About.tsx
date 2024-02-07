@@ -29,7 +29,7 @@ export default function AboutSection() {
 
   return (
     <SectionContainer
-      bgClasses="h-screen bg-[linear-gradient(to_bottom,#13051f,#2cfc0430_60%,#13051f30_75%,#13051f_95%),url('/bgImages/honeycomb.webp')] bg-cover relative"
+      bgClasses="h-[100dvh] bg-[linear-gradient(to_bottom,#13051f,#2cfc0430_60%,#13051f30_75%,#13051f_95%),url('/bgImages/honeycomb.webp')] bg-cover relative"
       additionalContentClasses="flex flex-col items-center justify-center w-full h-full"
       id="about"
     >

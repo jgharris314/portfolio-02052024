@@ -1,6 +1,6 @@
 export default function ButtonGroup({ next, previous }: any) {
   const classes =
-    " shadow-sm shadow-mothGrey-0 p-4 text-[18px] rounded border-2 border-mothBlack-0 text-mothGrey-0 font-bold"
+    " shadow-sm shadow-mothGrey-0 p-4 text-[16px] whitespace-nowrap rounded border-2 border-mothBlack-0 text-mothGrey-0 font-bold"
   return (
     <div className="flex w-full gap-4 justify-center">
       <div className="bg-mothBlack-0">

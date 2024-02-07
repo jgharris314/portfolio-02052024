@@ -26,7 +26,7 @@ export default function ContactSection() {
 
   return (
     <SectionContainer
-      bgClasses="h-screen bg-[linear-gradient(to_bottom,#13051f,#2cfc0430_60%,#13051f30_75%,#13051f_95%),url('/bgImages/rect.jpeg')] bg-cover pt-20"
+      bgClasses="h-[100dvh] bg-[linear-gradient(to_bottom,#13051f,#2cfc0430_60%,#13051f30_75%,#13051f_95%),url('/bgImages/rect.jpeg')] bg-cover pt-20"
       additionalContentClasses="w-full text-center max-w-[800px]"
       id="contact"
     >
