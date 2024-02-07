@@ -33,7 +33,7 @@ export default function AboutSection() {
       additionalContentClasses="flex flex-col items-center justify-center w-full h-full"
       id="about"
     >
-      <div className="text-[22px] md:text-[36px] mb-4 text-mothGrey-0 font-semibold">
+      <div className="text-[22px] md:text-[36px] mb-4 label-classes font-semibold">
         I have been described as:
       </div>
       <div className="text-[36px] md:text-[72px] label-classes w-[280px] md:w-[700px] text-center uppercase">
