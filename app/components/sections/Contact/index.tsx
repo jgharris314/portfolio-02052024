@@ -79,13 +79,15 @@ export default function ContactSection() {
             // @ts-ignore
             rows="5"
             parentClasses="col-span-2 rounded flex flex-col"
-            inputClasses="w-full text-black"
+            inputClasses="w-full text-black rounded"
             labelClasses=" text-lensGrey-0"
             label="What would you like to collaborate on?"
             validation={{ required: "Message is required" }}
           />
           <div className="col-span-2 flex justify-center">
-            <button>Submit</button>
+            <button className="bg-mothGreen-0/80 shadow-sm shadow-mothGrey-0 p-4 text-[18px] rounded border-2 border-mothBlack-0 text-mothGrey- font-bold">
+              Submit
+            </button>
           </div>
         </form>
       </FormProvider>

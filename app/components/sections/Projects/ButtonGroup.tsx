@@ -1,13 +1,10 @@
-export default function ButtonGroup({
-  next,
-  previous,
-  goToSlide,
-  ...rest
-}: any) {
+export default function ButtonGroup({ next, previous }: any) {
+  const classes =
+    " shadow-sm shadow-mothGrey-0 p-4 text-[18px] rounded border-2 border-mothBlack-0 text-mothGrey-0 font-bold"
   return (
     <div className="flex w-full gap-4 justify-center">
       <button
-        className="bg-mothOrange-0 w-32 h-16 text-[18px] bg-gradient-to-bl from-mothBlack-0/80 to-mothBlack-0/0 rounded"
+        className={`${classes} bg-mothOrange-0/90`}
         type="button"
         onClick={() => previous()}
       >
@@ -15,7 +12,7 @@ export default function ButtonGroup({
       </button>
       <button
         type="button"
-        className="bg-mothGreen-0 w-32 h-16 text-[18px] bg-gradient-to-tr from-mothBlack-0/80 to-mothBlack-0/0 rounded"
+        className={`${classes} bg-mothGreen-0/80 `}
         onClick={() => next()}
       >
         Next Project
