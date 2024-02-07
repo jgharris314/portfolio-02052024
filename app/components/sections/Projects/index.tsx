@@ -35,7 +35,7 @@ export default function ProjectsSection() {
               key={uuidv4()}
               className="relative flex flex-col w-full gap-2 text-mothGrey-0"
             >
-              <span className="text-[36px] md:text-[48px] leading-[36px] md:leading-[48px] font-bold p-2 !bg-mothBlack-0 !text-mothGrey-0 whitespace-nowrap max-w-min mx-auto">
+              <span className="text-[20px] md:text-[48px] leading-[28px] md:leading-[48px] font-bold p-2 !bg-mothBlack-0 !text-mothGrey-0 whitespace-nowrap max-w-min mx-auto">
                 {item.title}
               </span>
               <Carousel responsive={innerCarouselResponsiveness} infinite>
@@ -52,7 +52,7 @@ export default function ProjectsSection() {
                   )
                 })}
               </Carousel>
-              <span className="text-[18px] bg-mothBlack-0 mx-auto md:max-w-[600px] p-2">
+              <span className="text-[14px] md:text-[18px] bg-mothBlack-0 mx-auto md:max-w-[600px] p-2">
                 {item.description}
               </span>
               <div className="flex max-w-min mx-auto justify-center gap-4 mb-4 bg-mothBlack-0 p-2">
