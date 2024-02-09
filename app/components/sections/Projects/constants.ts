@@ -46,7 +46,7 @@ export const carouselItems = [
     imgAlt: "screenshot of mothDama",
     title: "Project: mothDama",
     description:
-      "An app made for the kendama community. Made with the PERN stack",
+      "An app made for the kendama community. Featuring different game modes. Made with the PERN stack",
     demoLink: "https://mothdama.vercel.app/games",
     githubLink: "https://github.com/jgharris314/mothDama",
   },

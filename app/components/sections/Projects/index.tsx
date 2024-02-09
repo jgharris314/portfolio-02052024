@@ -16,7 +16,7 @@ import ButtonGroup from "./ButtonGroup"
 export default function ProjectsSection() {
   return (
     <SectionContainer
-      bgClasses="h-[100dvh] bg-[linear-gradient(to_bottom,#13051f,#2cfc0430_60%,#13051f30_75%,#13051f_95%),url('/bgImages/lines.jpeg')] bg-cover pt-20"
+      bgClasses="min-h-screen bg-[linear-gradient(to_bottom,#13051f,#2cfc0430_60%,#13051f30_75%,#13051f_95%),url('/bgImages/lines.jpeg')] bg-cover md:pt-12 lg:pt-16"
       additionalContentClasses="w-full text-center"
       id="projects"
     >
@@ -24,17 +24,18 @@ export default function ProjectsSection() {
         responsive={carouselResponsiveness}
         infinite
         arrows={false}
-        // customButtonGroup={}
+        customButtonGroup={<ButtonGroup />}
         draggable={false}
         swipeable={false}
+        renderButtonGroupOutside
       >
         {carouselItems.map((item) => {
           return (
             <div
               key={uuidv4()}
-              className="relative flex flex-col w-full gap-2 text-mothGrey-0 bg-mothBlack-0/30 rounded py-2 md:py-8"
+              className="relative flex flex-col w-full gap-2 text-mothGrey-0 bg-mothBlack-0/30 rounded-t pt-2"
             >
-              <span className="text-[20px] md:text-[48px] leading-[28px] md:leading-[48px] font-bold p-2 !bg-mothBlack-0 !text-mothGrey-0 whitespace-nowrap max-w-min mx-auto">
+              <span className="text-[20px] md:text-[40px] leading-[28px] md:leading-[40px] font-bold p-2 !bg-mothBlack-0 !text-mothGrey-0 whitespace-nowrap max-w-min mx-auto">
                 {item.title}
               </span>
               <Carousel responsive={innerCarouselResponsiveness} infinite>
@@ -64,7 +65,6 @@ export default function ProjectsSection() {
                   </a>
                 }
               </div>
-              <ButtonGroup />
             </div>
           )
         })}
