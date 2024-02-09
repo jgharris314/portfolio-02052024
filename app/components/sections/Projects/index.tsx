@@ -24,8 +24,7 @@ export default function ProjectsSection() {
         responsive={carouselResponsiveness}
         infinite
         arrows={false}
-        customButtonGroup={<ButtonGroup />}
-        renderButtonGroupOutside={true}
+        // customButtonGroup={}
         draggable={false}
         swipeable={false}
       >
@@ -33,7 +32,7 @@ export default function ProjectsSection() {
           return (
             <div
               key={uuidv4()}
-              className="relative flex flex-col w-full gap-2 text-mothGrey-0"
+              className="relative flex flex-col w-full gap-2 text-mothGrey-0 bg-mothBlack-0/30 rounded"
             >
               <span className="text-[20px] md:text-[48px] leading-[28px] md:leading-[48px] font-bold p-2 !bg-mothBlack-0 !text-mothGrey-0 whitespace-nowrap max-w-min mx-auto">
                 {item.title}
@@ -65,6 +64,7 @@ export default function ProjectsSection() {
                   </a>
                 }
               </div>
+              <ButtonGroup />
             </div>
           )
         })}
