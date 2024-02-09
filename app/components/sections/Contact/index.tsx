@@ -21,16 +21,15 @@ export default function ContactSection() {
 
   const parentClasses = "text-black flex flex-col"
   const inputClasses = "h-12 rounded"
-  const labelClasses =
-    "text-mothGrey-0 bg-mothBlack-0 max-w-min whitespace-nowrap p-1"
+  const labelClasses = "text-mothGrey-0 whitespace-nowrap p-1"
 
   return (
     <SectionContainer
-      bgClasses="h-[100dvh] bg-[linear-gradient(to_bottom,#13051f,#2cfc0430_60%,#13051f30_75%,#13051f_95%),url('/bgImages/rect.jpeg')] bg-cover pt-20"
-      additionalContentClasses="w-full text-center max-w-[800px]"
+      bgClasses="h-[100dvh] pt-20"
+      additionalContentClasses="w-full text-center max-w-[800px] rounded-t"
       id="contact"
     >
-      <h3 className="text-[28px] leading-[28px] md:text-[72px] md:leading-[72px] mb-4">
+      <h3 className="text-[28px] leading-[28px] md:text-[72px] md:leading-[72px] my-4">
         {" "}
         Let&apos;s Get In Touch
       </h3>
